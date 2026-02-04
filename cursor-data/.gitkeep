@@ -1,0 +1,4 @@
+# Keep this directory for flashcard and learning data
+# Files stored here:
+# - flashcards.json (spaced repetition cards)
+# - .current_quiz.json (cached quiz state)

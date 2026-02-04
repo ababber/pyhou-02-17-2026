@@ -1,0 +1,40 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+
+# Cursor state files
+cursor-usage/.reminder_last_date
+cursor-usage/*.db
+
+# Exported chats (keep local only; .gitkeep stays for template structure)
+cursor-chats/*.md
+!cursor-chats/.gitkeep
+
+# Learning data (flashcards regenerated per-project)
+cursor-data/flashcards.json
+cursor-data/.current_quiz.json
+cursor-data/.quiz_state.json
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+temp/
+*.tmp
+*.bak
