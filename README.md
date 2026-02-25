@@ -21,6 +21,8 @@ Can machine learning predict financial markets? This repo accompanies a video se
 | Run the strategies on QuantConnect | [QuantConnect Setup](#quantconnect-setup) |
 | Original live presentation | [pyhou-live-presentation-material/](pyhou-live-presentation-material/) |
 
+> **Note:** When opening in Colab, you'll see a "This notebook was not authored by Google" warning — click **Run anyway** to proceed.
+
 ---
 
 ## Part 1: Classical ML (Ridge Regression)
