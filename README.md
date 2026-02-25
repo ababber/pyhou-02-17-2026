@@ -89,11 +89,13 @@ For detailed QuantConnect setup, see [pyhou-live-presentation-material/QC.md](py
 
 ## Video Series
 
-| Part | Topic | Model | Research Notebook | Status |
-|------|-------|-------|-------------------|--------|
-| 1 | Classical ML | Ridge Regression (1970) | [part-1-classical-ml/](part-1-classical-ml/) | Ready |
-| 2 | Deep Learning | Temporal CNN (1989) | `part-2-deep-learning/` | *Planned* |
-| 3 | Foundation Model | Amazon Chronos (2024) | `part-3-foundation-model/` | *Planned* |
+| Part | Topic | Model | Research Notebook | QC Tier | Status |
+|------|-------|-------|-------------------|---------|--------|
+| 1 | Classical ML | Ridge Regression (1970) | [part-1-classical-ml/](part-1-classical-ml/) | **Free** | Ready |
+| 2 | Deep Learning | Temporal CNN (1989) | `part-2-deep-learning/` | **Free** | *Planned* |
+| 3 | Foundation Model | Amazon Chronos (2024) | `part-3-foundation-model/` | **Research**¹ | *Planned* |
+
+¹ Part 3 requires a [QuantConnect Research subscription](https://www.quantconnect.com/pricing) (~$8/mo) for fine-tuning exercises. Backtesting the pre-trained model works on free tier.
 
 ---
 
