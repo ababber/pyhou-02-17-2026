@@ -14,7 +14,7 @@ Can machine learning predict financial markets? This repo accompanies a video se
 | What you want | Where to go |
 |---------------|-------------|
 | Watch the video explanation | [YouTube](#) *(coming soon)* |
-| Part 1 research notebook | [View on GitHub](part-1-classical-ml/research-notebook.ipynb) *(coming soon)* |
+| Part 1 research notebook | [View on GitHub](part-1-classical-ml/research-notebook.ipynb) or [NBViewer](https://nbviewer.org/github/ababber/pyhou-02-17-2026/blob/main/part-1-classical-ml/research-notebook.ipynb) |
 | Part 2 research notebook | *Planned* |
 | Part 3 research notebook | *Planned* |
 | Run notebooks locally | [Local Setup](#local-setup) |
@@ -87,7 +87,7 @@ For detailed QuantConnect setup, see [pyhou-live-presentation-material/QC.md](py
 
 | Part | Topic | Model | Research Notebook | Status |
 |------|-------|-------|-------------------|--------|
-| 1 | Classical ML | Ridge Regression (1970) | [part-1-classical-ml/](part-1-classical-ml/) | *Coming soon* |
+| 1 | Classical ML | Ridge Regression (1970) | [part-1-classical-ml/](part-1-classical-ml/) | Ready |
 | 2 | Deep Learning | Temporal CNN (1989) | `part-2-deep-learning/` | *Planned* |
 | 3 | Foundation Model | Amazon Chronos (2024) | `part-3-foundation-model/` | *Planned* |
 
