@@ -14,7 +14,7 @@ Can machine learning predict financial markets? This repo accompanies a video se
 | What you want | Where to go |
 |---------------|-------------|
 | Watch the video explanation | [YouTube](#) *(coming soon)* |
-| Part 1 research notebook | [View on GitHub](part-1-classical-ml/research-notebook.ipynb) or [NBViewer](https://nbviewer.org/github/ababber/pyhou-02-17-2026/blob/main/part-1-classical-ml/research-notebook.ipynb) |
+| Part 1 research notebook | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ababber/pyhou-02-17-2026/blob/main/part-1-classical-ml/research-notebook.ipynb) or [GitHub](part-1-classical-ml/research-notebook.ipynb) |
 | Part 2 research notebook | *Planned* |
 | Part 3 research notebook | *Planned* |
 | Run notebooks locally | [Local Setup](#local-setup) |
@@ -53,7 +53,7 @@ python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
 # Install dependencies
-pip install plotly jupyter
+pip install numpy scikit-learn plotly jupyter
 
 # Launch Jupyter and open any notebook
 jupyter notebook
@@ -61,8 +61,12 @@ jupyter notebook
 
 **Requirements:**
 - Python 3.9+
+- numpy
+- scikit-learn
 - plotly
 - jupyter
+
+**Note:** Google Colab has all dependencies pre-installed. For local setup, you need the packages above.
 
 ---
 
