@@ -14,7 +14,8 @@ Can machine learning predict financial markets? This repo accompanies a video se
 | What you want | Where to go |
 |---------------|-------------|
 | Watch the video explanation | [YouTube](#) *(coming soon)* |
-| Part 1 research notebook | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ababber/pyhou-02-17-2026/blob/main/part-1-classical-ml/research-notebook.ipynb) or [GitHub](part-1-classical-ml/research-notebook.ipynb) |
+| Part 1 research notebook | [GitHub](part-1-classical-ml/research-notebook.ipynb) |
+| Part 1 Colab notebook | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ababber/pyhou-02-17-2026/blob/main/part-1-classical-ml/research-notebook.ipynb) |
 | Part 2 research notebook | *Planned* |
 | Part 3 research notebook | *Planned* |
 | Run notebooks locally | [Local Setup](#local-setup) |
