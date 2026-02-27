@@ -190,10 +190,20 @@ Pre-trained HuggingFace models (Chronos, FinBERT, etc.) may contain **architectu
 
 **General rule:** For any exercise using pre-trained models, note the model's release date vs. backtest period. If they overlap, flag the lookahead risk.
 
+### Chart API Downsampling
+
+QC's `/backtests/chart/read` endpoint returns uniformly-resampled data — not raw daily returns. For a 5-year backtest, QC returns ~375 points at uniform 5.12-day intervals regardless of request parameters. This is server-side interpolation for visualization.
+
+**Impact:** If you export equity curve data and recalculate metrics (Sharpe, volatility), you'll get different values than QC reports. The interpolation smooths volatility, artificially inflating Sharpe. QC's reported Sharpe uses actual daily trading returns internally.
+
+**Example:** In Part 1, QC reports Sharpe 0.212. Recalculating from exported chart data gives 0.29–0.34 — the smoothed data has lower volatility. The conclusion doesn't change (still half the market's Sharpe), but the numbers differ.
+
+**Workaround:** For accurate return statistics, use QC's reported metrics directly. For full-resolution data, run backtests locally via LEAN CLI or add `self.Plot("DailyEquity", "Value", self.Portfolio.TotalPortfolioValue)` in your algorithm's `on_end_of_day()` to create a custom daily series.
+
 ### Crypto Data
 
 Bybit BTCUSDC data available on QC from July 2017 via CoinAPI. 956 cryptocurrency pairs supported. Resolutions: tick, second, minute, hourly, daily. Access: `self.add_crypto("BTCUSDC", market=Market.BYBIT)`. Free on cloud for backtesting.
 
 ---
 
-*Compiled from working through 19 exercises in HOAIT. Exercises 13, 14, 16, and 17 had zero bugs. Last updated: 2026-02-17.*
+*Compiled from working through 19 exercises in HOAIT. Exercises 13, 14, 16, and 17 had zero bugs. Last updated: 2026-02-26.*
