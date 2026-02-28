@@ -1,4 +1,4 @@
-# Quantitative Trading: A First Look
+# Quantitative Trading: A First Look With QuantConnect
 
 **Three Generations of Machine Learning Applied to Quantitative Trading**
 
@@ -13,7 +13,7 @@ Can machine learning predict financial markets? This repo accompanies a video se
 
 | What you want | Where to go |
 |---------------|-------------|
-| Watch the video explanation | [YouTube](#) *(coming soon)* |
+| Watch the video explanation | [YouTube](https://youtube.com/playlist?list=PLBfBLYe88LVVhpUMeBLzqXWWw90vT6_A6&si=sbCeyVoY_qrG96BT) |
 | Part 1 research notebook | [GitHub](part-1-classical-ml/research-notebook.ipynb) |
 | Part 1 Colab notebook | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ababber/pyhou-02-17-2026/blob/main/part-1-classical-ml/research-notebook.ipynb) |
 | Part 2 research notebook | *Planned* |
