@@ -32,8 +32,13 @@ lean backtest "Name"               # Run backtest locally (Docker required)
 ```
 
 - **Best for:** Local development with your preferred editor, CI/CD pipelines, version control
-- **Limitations:** Local backtesting requires Docker and can be resource-intensive; some data only available on cloud
+- **Limitations:** Local backtesting requires Docker and downloaded data; some data only available on cloud
 - **Tip:** `lean cloud push/pull` keeps local and cloud in sync
+
+**Note on automated environments:** LEAN CLI commands stream output indefinitely until completion. In automated shell sessions (CI/CD, scripting, AI coding assistants), this can cause hangs or timeouts. Workarounds:
+1. Use the full path to the binary (e.g., `~/.local/bin/lean`) to bypass shell aliasing issues
+2. Run in a separate terminal process with explicit output handling
+3. For AI assistants, prefer the REST API over LEAN CLI — it's non-blocking and returns structured responses
 
 ### 3. VS Code Extension
 
