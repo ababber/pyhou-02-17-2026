@@ -4,8 +4,6 @@
 
 Can machine learning predict financial markets? This repo accompanies a video series where I test three generations of ML — from a 1970 linear model to a 2024 foundation model — on the same backtesting platform.
 
-<!-- TODO: Add video embed when published -->
-<!-- [![Watch on YouTube](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID) -->
 
 ---
 
@@ -43,6 +41,22 @@ The first video covers ridge regression — a classical linear model from 1970 �
 
 ---
 
+## Part 2: Deep Learning (Temporal CNN)
+
+The second video covers temporal convolutional networks — detecting patterns across multiple timescales in price data.
+
+**The strategy:**
+- Trade top 3 QQQ holdings (AAPL, MSFT, NVDA)
+- 15-day OHLCV features → 3-class prediction (up/down/stationary)
+- Temporal split: long/mid/short-term signals with separate learned weights
+- Weekly retraining, confidence-weighted position sizing
+
+**The result:** Sharpe 0.649, Alpha +0.093. The CNN found genuine signal with lower drawdown (26% vs 55%) and positive alpha — beating the market with less risk.
+
+**Why it matters:** Nonlinear pattern detection works — but PSR 21.9% means we'd need a longer backtest to confirm it isn't noise. The forensic analysis in the notebook explores this limitation.
+
+---
+
 ## Local Setup
 
 The notebooks use `plotly` for interactive charts. Everything else is narrative + embedded QuantConnect code.
@@ -57,7 +71,7 @@ python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
 # Install dependencies
-pip install numpy scikit-learn plotly jupyter
+pip install numpy scikit-learn plotly jupyter tensorflow pandas matplotlib
 
 # Launch Jupyter and open any notebook
 jupyter notebook
@@ -69,6 +83,9 @@ jupyter notebook
 - scikit-learn
 - plotly
 - jupyter
+- tensorflow (Part 2)
+- pandas (Part 2)
+- matplotlib (Part 2)
 
 **Note:** Google Colab has all dependencies pre-installed. For local setup, you need the packages above.
 
