@@ -16,7 +16,8 @@ Can machine learning predict financial markets? This repo accompanies a video se
 | Watch the video explanation | [YouTube](https://youtube.com/playlist?list=PLBfBLYe88LVVhpUMeBLzqXWWw90vT6_A6&si=sbCeyVoY_qrG96BT) |
 | Part 1 research notebook | [GitHub](part-1-classical-ml/research-notebook.ipynb) |
 | Part 1 Colab notebook | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ababber/pyhou-02-17-2026/blob/main/part-1-classical-ml/research-notebook.ipynb) |
-| Part 2 research notebook | *Planned* |
+| Part 2 research notebook | [GitHub](part-2-deep-learning/research-notebook.ipynb) |
+| Part 2 Colab notebook | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ababber/pyhou-02-17-2026/blob/main/part-2-deep-learning/research-notebook.ipynb) |
 | Part 3 research notebook | *Planned* |
 | Run notebooks locally | [Local Setup](#local-setup) |
 | Run the strategies on QuantConnect | [QuantConnect Setup](#quantconnect-setup) |
@@ -95,7 +96,7 @@ For detailed QuantConnect setup, see [pyhou-live-presentation-material/QC.md](py
 | Part | Topic | Model | Research Notebook | QC Tier | Status |
 |------|-------|-------|-------------------|---------|--------|
 | 1 | Classical ML | Ridge Regression (1970) | [part-1-classical-ml/](part-1-classical-ml/) | **Free** | Ready |
-| 2 | Deep Learning | Temporal CNN (1989) | `part-2-deep-learning/` | **Free** | *Planned* |
+| 2 | Deep Learning | Temporal CNN (1989) | [part-2-deep-learning/](part-2-deep-learning/) | **Free** | Ready |
 | 3 | Foundation Model | Amazon Chronos (2024) | `part-3-foundation-model/` | **Research**¹ | *Planned* |
 
 ¹ Part 3 requires a [QuantConnect Research subscription](https://www.quantconnect.com/pricing) (~$8/mo) for fine-tuning exercises. Backtesting the pre-trained model works on free tier.
