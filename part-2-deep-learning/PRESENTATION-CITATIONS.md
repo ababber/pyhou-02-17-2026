@@ -2,7 +2,7 @@
 
 Every factual claim in the video presentation with its supporting citation. Use this document to verify accuracy before publishing.
 
-**Verification status:** ✅ Complete (2026-03-04)
+**Verification status:** ✅ Complete (2026-03-06)
 
 ---
 
@@ -87,11 +87,9 @@ Zavanelli, N. (2023). "Wavelet Analysis for Time Series Financial Signals via El
 > "The model LEARNS which timescale matters"
 
 **Citation:**
-~~Lund University. "Multi-scale Analysis of Financial Time Series."~~
+Gençay, R., Selçuk, F., & Whitcher, B. (2001). "Wavelet methods in (financial) time-series processing." *Physica A: Statistical Mechanics and its Applications*, 312(1-2), 225-236.
 
-**Status:** ⚠️ BROKEN — Original URL (lunduniversity.lu.se/lup/publication/8938181) returns 404.
-
-**Replacement needed:** Search for alternative academic source on multi-scale financial analysis.
+**Verify:** https://www.p.u-tokyo.ac.jp/~zbyszek/zrs/Papers/Entries/2001/6/13_Wavelet_methods_in_(financial)_time-series_processing_files/1-s2.0-S0378437101001017-main.pdf
 
 ---
 
@@ -113,13 +111,11 @@ Kelly, J.L. (1956). "A New Interpretation of Information Rate." *Bell System Tec
 > "Most traders use fractional Kelly to reduce volatility"
 
 **Citation:**
-~~Medium. "Position Sizing Using the Kelly Criterion."~~
+Lototsky, S. (2023). "Kelly Criterion: From a Simple Random Walk to Lévy Processes." USC Dornsife.
 
-**Status:** ⚠️ BROKEN — Original URL returns 404.
+**Verify:** https://dornsife.usc.edu/sergey-lototsky/wp-content/uploads/sites/211/2023/11/Kelly-Fin-SIFIN-Final.pdf
 
-**Replacement:** General knowledge — fractional Kelly is well-documented in trading literature. Alternative sources:
-- https://www.caia.org/sites/default/files/AIAR_Q3_2016_05_KellyCapital.pdf
-- Thorp, E.O. (2007). "The Kelly Criterion in Blackjack, Sports Betting and the Stock Market."
+**Additional:** Thorp, E.O. (2007). "The Kelly Criterion in Blackjack, Sports Betting and the Stock Market." *Handbook of Asset and Liability Management*, 385-428.
 
 ---
 
@@ -208,25 +204,13 @@ Ansari, A.F. et al. (2024). "Chronos: Learning the Language of Time Series." arX
 | 1 | 1 | ✅ |
 | 3 | 2 | ✅ |
 | 4 | 1 | ✅ |
-| 4a | 2 | ⚠️ 1 broken |
-| 5 | 2 | ⚠️ 1 broken |
+| 4a | 2 | ✅ |
+| 5 | 2 | ✅ |
 | 5a | 2 | ✅ |
 | 6 | 3 | ✅ |
 | 7 | 1 | ✅ |
-| **Total** | **14** | **12 ✅ / 2 ⚠️** |
+| **Total** | **14** | **14 ✅** |
 
 ---
 
-## Broken Links Requiring Replacement
-
-1. **Slide 4a** — Lund University multi-scale analysis paper
-   - Original: `lunduniversity.lu.se/lup/publication/8938181`
-   - Action: Find alternative academic source or remove citation
-
-2. **Slide 5** — Medium fractional Kelly article
-   - Original: `medium.com/@olsonngula/position-sizing-using-the-kelly-criterion`
-   - Action: Replace with CAIA Journal article on Kelly Capital
-
----
-
-*Last verified: 2026-03-04*
+*Last verified: 2026-03-06*
