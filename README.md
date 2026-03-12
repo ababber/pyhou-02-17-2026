@@ -116,7 +116,7 @@ For detailed QuantConnect setup, see [pyhou-live-presentation-material/QC.md](py
 | 2 | Deep Learning | Temporal CNN (1989) | [part-2-deep-learning/](part-2-deep-learning/) | **Free** | Ready |
 | 3 | Foundation Model | Amazon Chronos (2024) | `part-3-foundation-model/` | **Research**¹ | *Planned* |
 
-¹ Part 3 requires a [QuantConnect Research subscription](https://www.quantconnect.com/pricing) (~$8/mo) for fine-tuning exercises. Backtesting the pre-trained model works on free tier.
+¹ Part 3 requires a [QuantConnect Researcher plan](https://www.quantconnect.com/pricing) ($60/mo or $600/yr) for fine-tuning exercises. Backtesting the pre-trained model works on free tier.
 
 ---
 
