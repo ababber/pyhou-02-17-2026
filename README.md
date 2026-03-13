@@ -16,7 +16,8 @@ Can machine learning predict financial markets? This repo accompanies a video se
 | Part 1 Colab notebook | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ababber/pyhou-02-17-2026/blob/main/part-1-classical-ml/research-notebook.ipynb) |
 | Part 2 research notebook | [GitHub](part-2-deep-learning/research-notebook.ipynb) |
 | Part 2 Colab notebook | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ababber/pyhou-02-17-2026/blob/main/part-2-deep-learning/research-notebook.ipynb) |
-| Part 3 research notebook | *Planned* |
+| Part 3 research notebook | [GitHub](part-3-foundation-models/research-notebook.ipynb) |
+| Part 3 Colab notebook | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ababber/pyhou-02-17-2026/blob/main/part-3-foundation-models/research-notebook.ipynb) |
 | Run notebooks locally | [Local Setup](#local-setup) |
 | Run the strategies on QuantConnect | [QuantConnect Setup](#quantconnect-setup) |
 | Original live presentation | [pyhou-live-presentation-material/](pyhou-live-presentation-material/) |
@@ -57,6 +58,24 @@ The second video covers temporal convolutional networks — detecting patterns a
 
 ---
 
+## Part 3: Foundation Models (Amazon Chronos)
+
+The third video covers zero-shot time series forecasting — using a pre-trained transformer that has never seen financial data.
+
+**The strategy:**
+- Trade top 5 stocks by dollar volume (AAPL, MSFT, NVDA, GOOGL, AMZN)
+- Use Amazon Chronos to forecast 63-day price trajectories
+- Sharpe-optimal portfolio weights via SciPy SLSQP
+- Quarterly rebalancing
+
+**The result:** Base model: Sharpe 0.727, Alpha +0.040. Fine-tuned (3 gradient steps): Sharpe 0.846, Alpha +0.076. Both beat ridge regression with zero training effort.
+
+**Why it matters:** Foundation models transfer temporal patterns learned from weather, retail, and energy data to finance. But high beta (1.1) means most returns come from market exposure, and PSR 34.6% still isn't statistically significant. The notebook includes caveats on tokenization lookahead bias and trading frictions.
+
+> **Note:** The end-to-end pipeline cell requires a T4 GPU in Colab. Go to Runtime → Change runtime type → T4 GPU.
+
+---
+
 ## Local Setup
 
 The notebooks use `plotly` for interactive charts. Everything else is narrative + embedded QuantConnect code.
@@ -86,8 +105,10 @@ jupyter notebook
 - tensorflow (Part 2)
 - pandas (Part 2)
 - matplotlib (Part 2)
+- torch (Part 3)
+- chronos-forecasting (Part 3)
 
-**Note:** Google Colab has all dependencies pre-installed. For local setup, you need the packages above.
+**Note:** Google Colab has most dependencies pre-installed. For Part 3, run `!pip install chronos-forecasting` in Colab. The end-to-end pipeline requires a T4 GPU runtime.
 
 ---
 
@@ -114,9 +135,9 @@ For detailed QuantConnect setup, see [pyhou-live-presentation-material/QC.md](py
 |------|-------|-------|-------------------|---------|--------|
 | 1 | Classical ML | Ridge Regression (1970) | [part-1-classical-ml/](part-1-classical-ml/) | **Free** | Ready |
 | 2 | Deep Learning | Temporal CNN (1989) | [part-2-deep-learning/](part-2-deep-learning/) | **Free** | Ready |
-| 3 | Foundation Model | Amazon Chronos (2024) | `part-3-foundation-model/` | **Research**¹ | *Planned* |
+| 3 | Foundation Models | Amazon Chronos (2024) | [part-3-foundation-models/](part-3-foundation-models/) | **Research**¹ | Ready |
 
-¹ Part 3 requires a [QuantConnect Researcher plan](https://www.quantconnect.com/pricing) ($60/mo or $600/yr) for fine-tuning exercises. Backtesting the pre-trained model works on free tier.
+¹ Part 3 requires a [QuantConnect Researcher plan](https://www.quantconnect.com/pricing) ($60/mo or $600/yr) for fine-tuning exercises. Backtesting the pre-trained model works on free tier. The notebook's end-to-end pipeline demo requires a T4 GPU in Colab.
 
 ---
 
