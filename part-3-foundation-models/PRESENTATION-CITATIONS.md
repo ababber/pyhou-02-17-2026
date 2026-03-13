@@ -27,11 +27,7 @@
 
 ## Backtest Verification
 
-### QuantConnect Project IDs
-- Base Model: Project 28164872, Backtest 47b676375c05c6b3d71798dc775f7753
-- Fine-Tuned: Project 28164873, Backtest f23c48d8f90bd2e5d39706e0b447fee8
-
-### Metrics (from QC API)
+### Metrics (from QuantConnect API)
 
 | Metric | Base | Fine-Tuned |
 |--------|------|------------|
