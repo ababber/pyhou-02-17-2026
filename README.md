@@ -12,19 +12,19 @@
 
 [![YouTube](https://img.shields.io/badge/YouTube-Watch_Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=jnleuAGZTsY&list=PLBfBLYe88LVVhpUMeBLzqXWWw90vT6_A6)
 [![GitHub](https://img.shields.io/badge/GitHub-View_Notebook-181717?style=for-the-badge&logo=github)](part-1-classical-ml/)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ababber/pyhou-02-17-2026/blob/main/part-1-classical-ml/research-notebook.ipynb)
+[![Colab](https://img.shields.io/badge/Colab-Open_Notebook-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/ababber/pyhou-02-17-2026/blob/main/part-1-classical-ml/research-notebook.ipynb)
 
 **Part 2: Deep Learning (Temporal CNN)**
 
 [![YouTube](https://img.shields.io/badge/YouTube-Watch_Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=CwGqyTc-PgA&list=PLBfBLYe88LVVhpUMeBLzqXWWw90vT6_A6)
 [![GitHub](https://img.shields.io/badge/GitHub-View_Notebook-181717?style=for-the-badge&logo=github)](part-2-deep-learning/)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ababber/pyhou-02-17-2026/blob/main/part-2-deep-learning/research-notebook.ipynb)
+[![Colab](https://img.shields.io/badge/Colab-Open_Notebook-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/ababber/pyhou-02-17-2026/blob/main/part-2-deep-learning/research-notebook.ipynb)
 
 **Part 3: Foundation Models (Amazon Chronos)**
 
 [![YouTube](https://img.shields.io/badge/YouTube-Watch_Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=paaaUnfbp5g&list=PLBfBLYe88LVVhpUMeBLzqXWWw90vT6_A6)
 [![GitHub](https://img.shields.io/badge/GitHub-View_Notebook-181717?style=for-the-badge&logo=github)](part-3-foundation-models/)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ababber/pyhou-02-17-2026/blob/main/part-3-foundation-models/research-notebook.ipynb)
+[![Colab](https://img.shields.io/badge/Colab-Open_Notebook-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/ababber/pyhou-02-17-2026/blob/main/part-3-foundation-models/research-notebook.ipynb)
 
 > **Note:** When opening in Colab, you'll see a "This notebook was not authored by Google" warning — click **Run anyway** to proceed.
 
