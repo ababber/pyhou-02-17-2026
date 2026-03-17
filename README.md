@@ -1,32 +1,40 @@
 # Quantitative Trading: A First Look With QuantConnect
 
-**Three Generations of Machine Learning Applied to Quantitative Trading**
+[![Watch the Full Series on YouTube](https://img.youtube.com/vi/jnleuAGZTsY/maxresdefault.jpg)](https://www.youtube.com/playlist?list=PLBfBLYe88LVVhpUMeBLzqXWWw90vT6_A6)
 
-Can machine learning predict financial markets? This repo accompanies a video series where I test three generations of ML — from a 1970 linear model to a 2024 foundation model — on the same backtesting platform.
+*Can machine learning predict financial markets? This repo accompanies a 3-part video series where I test three generations of ML — from a 1970 linear model to a 2024 foundation model — on the same backtesting platform.*
 
+📺 **[Click here to watch the full playlist on YouTube!](https://www.youtube.com/playlist?list=PLBfBLYe88LVVhpUMeBLzqXWWw90vT6_A6)**
 
 ---
 
 ## Quick Navigation
 
-| What you want | Where to go |
-|---------------|-------------|
-| Watch the video explanation | [YouTube](https://youtube.com/playlist?list=PLBfBLYe88LVVhpUMeBLzqXWWw90vT6_A6&si=sbCeyVoY_qrG96BT) |
-| Part 1 research notebook | [GitHub](part-1-classical-ml/research-notebook.ipynb) |
-| Part 1 Colab notebook | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ababber/pyhou-02-17-2026/blob/main/part-1-classical-ml/research-notebook.ipynb) |
-| Part 2 research notebook | [GitHub](part-2-deep-learning/research-notebook.ipynb) |
-| Part 2 Colab notebook | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ababber/pyhou-02-17-2026/blob/main/part-2-deep-learning/research-notebook.ipynb) |
-| Part 3 research notebook | [GitHub](part-3-foundation-models/research-notebook.ipynb) |
-| Part 3 Colab notebook | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ababber/pyhou-02-17-2026/blob/main/part-3-foundation-models/research-notebook.ipynb) |
-| Run notebooks locally | [Local Setup](#local-setup) |
-| Run the strategies on QuantConnect | [QuantConnect Setup](#quantconnect-setup) |
-| Original live presentation | [pyhou-live-presentation-material/](pyhou-live-presentation-material/) |
+**Part 1: Classical ML (Ridge Regression)**
+
+[![YouTube](https://img.shields.io/badge/YouTube-Watch_Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=jnleuAGZTsY&list=PLBfBLYe88LVVhpUMeBLzqXWWw90vT6_A6)
+[![GitHub](https://img.shields.io/badge/GitHub-View_Notebook-181717?style=for-the-badge&logo=github)](part-1-classical-ml/)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ababber/pyhou-02-17-2026/blob/main/part-1-classical-ml/research-notebook.ipynb)
+
+**Part 2: Deep Learning (Temporal CNN)**
+
+[![YouTube](https://img.shields.io/badge/YouTube-Watch_Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=CwGqyTc-PgA&list=PLBfBLYe88LVVhpUMeBLzqXWWw90vT6_A6)
+[![GitHub](https://img.shields.io/badge/GitHub-View_Notebook-181717?style=for-the-badge&logo=github)](part-2-deep-learning/)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ababber/pyhou-02-17-2026/blob/main/part-2-deep-learning/research-notebook.ipynb)
+
+**Part 3: Foundation Models (Amazon Chronos)**
+
+[![YouTube](https://img.shields.io/badge/YouTube-Watch_Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=paaaUnfbp5g&list=PLBfBLYe88LVVhpUMeBLzqXWWw90vT6_A6)
+[![GitHub](https://img.shields.io/badge/GitHub-View_Notebook-181717?style=for-the-badge&logo=github)](part-3-foundation-models/)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ababber/pyhou-02-17-2026/blob/main/part-3-foundation-models/research-notebook.ipynb)
 
 > **Note:** When opening in Colab, you'll see a "This notebook was not authored by Google" warning — click **Run anyway** to proceed.
 
 ---
 
 ## Part 1: Classical ML (Ridge Regression)
+
+▶️ **[Watch the Part 1 Video](https://www.youtube.com/watch?v=jnleuAGZTsY&list=PLBfBLYe88LVVhpUMeBLzqXWWw90vT6_A6)**
 
 The first video covers ridge regression — a classical linear model from 1970 — applied to inverse volatility weighting on 12 futures contracts.
 
@@ -44,6 +52,8 @@ The first video covers ridge regression — a classical linear model from 1970 �
 
 ## Part 2: Deep Learning (Temporal CNN)
 
+▶️ **[Watch the Part 2 Video](https://www.youtube.com/watch?v=CwGqyTc-PgA&list=PLBfBLYe88LVVhpUMeBLzqXWWw90vT6_A6)**
+
 The second video covers temporal convolutional networks — detecting patterns across multiple timescales in price data.
 
 **The strategy:**
@@ -59,6 +69,8 @@ The second video covers temporal convolutional networks — detecting patterns a
 ---
 
 ## Part 3: Foundation Models (Amazon Chronos)
+
+▶️ **[Watch the Part 3 Video](https://www.youtube.com/watch?v=paaaUnfbp5g&list=PLBfBLYe88LVVhpUMeBLzqXWWw90vT6_A6)**
 
 The third video covers zero-shot time series forecasting — using a pre-trained transformer that has never seen financial data.
 
@@ -81,32 +93,22 @@ The third video covers zero-shot time series forecasting — using a pre-trained
 The notebooks use `plotly` for interactive charts. Everything else is narrative + embedded QuantConnect code.
 
 ```bash
-# Clone the repo
 git clone https://github.com/ababber/pyhou-02-17-2026.git
 cd pyhou-02-17-2026
 
-# Create a virtual environment (optional but recommended)
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
-# Install dependencies
 pip install numpy scikit-learn plotly jupyter tensorflow pandas matplotlib
 
-# Launch Jupyter and open any notebook
 jupyter notebook
 ```
 
 **Requirements:**
 - Python 3.9+
-- numpy
-- scikit-learn
-- plotly
-- jupyter
-- tensorflow (Part 2)
-- pandas (Part 2)
-- matplotlib (Part 2)
-- torch (Part 3)
-- chronos-forecasting (Part 3)
+- numpy, scikit-learn, plotly, jupyter
+- tensorflow, pandas, matplotlib (Part 2)
+- torch, chronos-forecasting (Part 3)
 
 **Note:** Google Colab has most dependencies pre-installed. For Part 3, run `!pip install chronos-forecasting` in Colab. The end-to-end pipeline requires a T4 GPU runtime.
 
@@ -125,19 +127,24 @@ The actual trading strategies run on [QuantConnect](https://www.quantconnect.com
 
 **Note:** QuantConnect provides free backtesting with delayed data. The strategies in this series use futures contracts, which require a QuantConnect subscription for live trading but are free for backtesting.
 
+| Part | QC Tier Required |
+|------|------------------|
+| 1 | **Free** |
+| 2 | **Free** |
+| 3 | **Research**¹ (fine-tuning only) |
+
+¹ Part 3 requires a [QuantConnect Researcher plan](https://www.quantconnect.com/pricing) ($60/mo or $600/yr) for fine-tuning exercises. Backtesting the pre-trained model works on free tier.
+
 For detailed QuantConnect setup, see [pyhou-live-presentation-material/QC.md](pyhou-live-presentation-material/QC.md).
 
 ---
 
-## Video Series
+## Origin
 
-| Part | Topic | Model | Research Notebook | QC Tier | Status |
-|------|-------|-------|-------------------|---------|--------|
-| 1 | Classical ML | Ridge Regression (1970) | [part-1-classical-ml/](part-1-classical-ml/) | **Free** | Ready |
-| 2 | Deep Learning | Temporal CNN (1989) | [part-2-deep-learning/](part-2-deep-learning/) | **Free** | Ready |
-| 3 | Foundation Models | Amazon Chronos (2024) | [part-3-foundation-models/](part-3-foundation-models/) | **Research**¹ | Ready |
+This material is based on a live presentation I gave at [PyHou (Houston Python Meetup)](https://www.meetup.com/python-14/) on February 17, 2026.
 
-¹ Part 3 requires a [QuantConnect Researcher plan](https://www.quantconnect.com/pricing) ($60/mo or $600/yr) for fine-tuning exercises. Backtesting the pre-trained model works on free tier. The notebook's end-to-end pipeline demo requires a T4 GPU in Colab.
+- [Original Meetup Event](https://www.meetup.com/python-14/events/312872749/)
+- [PyHou Meetup Page](https://www.meetup.com/python-14/)
 
 ---
 
@@ -154,15 +161,6 @@ For detailed QuantConnect setup, see [pyhou-live-presentation-material/QC.md](py
 **Further reading:**
 - López de Prado, M. (2018). *Advances in Financial Machine Learning*. Wiley.
 - Jansen, S. (2020). *Machine Learning for Algorithmic Trading*. Packt.
-
----
-
-## Origin
-
-This material is based on a live presentation I gave at [PyHou (Houston Python Meetup)](https://www.meetup.com/python-14/) on February 17, 2026.
-
-- [Original Meetup Event](https://www.meetup.com/python-14/events/312872749/)
-- [PyHou Meetup Page](https://www.meetup.com/python-14/)
 
 ---
 
