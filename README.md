@@ -1,7 +1,5 @@
 # Quantitative Trading: A First Look With QuantConnect
 
-[![Watch the Full Series on YouTube](https://img.youtube.com/vi/aL3pD3G6hA0/hqdefault.jpg)](https://www.youtube.com/playlist?list=PLBfBLYe88LVVhpUMeBLzqXWWw90vT6_A6)
-
 *Can machine learning predict financial markets? This repo accompanies a 3-part video series where I test three generations of ML — from a 1970 linear model to a 2024 foundation model — on the same backtesting platform.*
 
 📺 **[Click here to watch the full playlist on YouTube!](https://www.youtube.com/playlist?list=PLBfBLYe88LVVhpUMeBLzqXWWw90vT6_A6)**
